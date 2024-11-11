@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "plugins": ["prettier", "unused-imports"],
+=======
+  "plugins": ["prettier", "unused-imports", ],
+>>>>>>> 708641628db17c9c785f23f5cf81cb85018cf067
   "extends": ["next", "next/core-web-vitals", "prettier"],
   "ignorePatterns": [
     "components/ui/*.ts",
