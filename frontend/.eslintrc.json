@@ -1,13 +1,11 @@
 {
-  "plugins": ["prettier", "unused-imports", "eslint-plugin-local-rules"],
+  "plugins": ["prettier", "unused-imports", ],
   "extends": ["next", "next/core-web-vitals", "prettier"],
   "ignorePatterns": [
     "components/ui/*.ts",
     "components/ui/*.tsx",
     "rules.ts",
     ".gitignore",
-    "eslint-local-rules/index.js",
-    "eslint-local-rules/rules.ts",
     ".next/",
     ".next"
   ],
@@ -21,10 +19,6 @@
         "operator-linebreak": ["warn", "after"]
       }
     ],
-
-    // "local-rules/disallow-identifiers": "error",
-    "local-rules/no-small-functional-component": "error",
-    "local-rules/use-client": "error",
     "camelcase": "off",
     "max-len": "off",
     // "no-var-capital": "error",
@@ -75,19 +69,11 @@
       "rules": {
         "@typescript-eslint/explicit-function-return-type": "off",
         "react-hooks/rules-of-hooks": "off",
-        // "import/no-unused-modules": ["error", {"unusedExports": true}],
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-var-requires": "off"
-        // "@typescript-eslint/quotes": [
-        //   2,
-        //   "singleQuote",
-        //   {
-        //     "avoidEscape": true
-        //   }
-        // ]
       }
     }
   ],

@@ -9,6 +9,7 @@ const nextConfig = {
       }
     ]
   },
+  // Learn SVGR configuration it is used to convert SVG to React components
   experimental: {
     turbo: {
       rules: {
@@ -19,6 +20,7 @@ const nextConfig = {
       }
     }
   },
+  // also for SVGR
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.('.svg')
@@ -44,13 +46,9 @@ const nextConfig = {
 
     return config
   },
-
-  env: {
-    NEXT_APP_SERVER: process.env.NEXT_APP_SERVER
-  },
   reactStrictMode: false,
   images: {
-    domains: ['cdn.shopify.com'],
+    domains: ['cdn.shopify.com'], // add the url of images here incase you want to use them in the app
     remotePatterns: [
       {
         protocol: 'https',

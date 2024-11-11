@@ -1,5 +1,5 @@
 'use client'
-import { ThemeProvider } from '../providers/theme-provider'
+// import { ThemeProvider } from '../providers/theme-provider'
 import { Toaster } from 'sonner'
 import { RecoilRoot } from 'recoil'
 import './globals.css'
@@ -14,15 +14,15 @@ function RootLayout({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <body className={inter.className}>
         <RecoilRoot>
-          <ThemeProvider
+          {/* <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
-          >
+          > */}
             {children}
             <Toaster closeButton richColors />
-          </ThemeProvider>
+          {/* </ThemeProvider> */}
         </RecoilRoot>
       </body>
     </html>
