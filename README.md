@@ -1,12 +1,13 @@
-# How to Run this project (Backend)
+#Clone the repository
 
-1. Clone the repository
-2. cd into the project directory wwa
-3. now move to the backend directory by running `cd backend`
-4. run `npm install` to install all the dependencies
-5. run `npm run start:dev` to start the server
+## How to Run this project (Backend)
 
-# How to Run Frontend (Frontend)
+1. cd into the project directory by running cd `cd wwa`
+2. now move to the backend directory by running `cd backend`
+3. run `npm install` to install all the dependencies
+4. run `npm run start:dev` to start the server
+
+## How to Run Frontend (Frontend)
 
 1. cd into the project directory by running `cd wwa`
 2. now move to the frontend directory by running `cd frontend`
