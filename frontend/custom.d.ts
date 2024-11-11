@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 708641628db17c9c785f23f5cf81cb85018cf067
 // if you are getting error of "Cannot find types of module 'xyz'" then you can add that module here
 // and error will be gone
 
