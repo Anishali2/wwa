@@ -1,13 +1,5 @@
 import React from 'react'
-import {
-  BriefcaseBusiness,
-  House,
-  Landmark,
-  PencilRuler,
-  PersonStanding,
-  Settings,
-  WalletMinimal
-} from 'lucide-react'
+import { House } from 'lucide-react'
 // import { TSidebarItem } from './types'
 import { SidebarItem } from './(components)/sidebar-item'
 import { URLS } from '@/src/lib/URLS'
@@ -21,47 +13,16 @@ const sidebarData: {
     name: 'Dashboard',
     icon: 'House',
     href: URLS.dashboardHome
-  },
-  {
-    name: 'Classes',
-    icon: 'PencilRuler',
-    href: URLS.classes
-  },
-  {
-    name: 'Students',
-    icon: 'PersonStanding',
-    href: URLS.students
-  },
-  {
-    name: 'Teachers',
-    icon: 'BriefcaseBusiness',
-    href: URLS.employees
-  },
-  {
-    name: 'Fees',
-    icon: 'WalletMinimal',
-    href: URLS.fees
-  },
-  { name: 'Salaries', icon: 'Landmark', href: URLS.salaries },
-  { name: 'Settings', icon: 'Settings', href: URLS.settings }
+  }
+
+  // { name: 'Salaries', icon: 'Landmark', href: URLS.salaries },
+  // { name: 'Settings', icon: 'Settings', href: URLS.settings }
 ]
-type iconType =
-  | 'House'
-  | 'PencilRuler'
-  | 'PersonStanding'
-  | 'BriefcaseBusiness'
-  | 'WalletMinimal'
-  | 'Landmark'
-  | 'Settings'
+type iconType = 'House'
+
 const IconComponent = ({ iconName }: { iconName: iconType }) => {
   const IconMap = {
-    House,
-    PencilRuler,
-    PersonStanding,
-    BriefcaseBusiness,
-    WalletMinimal,
-    Landmark,
-    Settings
+    House
   }
   const Icon = IconMap[iconName]
   return Icon ? <Icon /> : null
